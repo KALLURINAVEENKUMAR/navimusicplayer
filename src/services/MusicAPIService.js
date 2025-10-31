@@ -9,7 +9,7 @@ class MusicAPIService {
         artist: "Hi Nanna",
         album: "Hi Nanna",
         duration: 280,
-        audioUrl: "/songs/Adiga - Hi Nanna.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Adiga - Hi Nanna.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Adiga"
       },
       {
@@ -18,7 +18,7 @@ class MusicAPIService {
         artist: "Murari", 
         album: "Murari",
         duration: 250,
-        audioUrl: "/songs/Alanati - Murari.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Alanati - Murari.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Alanati"
       },
       {
@@ -27,7 +27,7 @@ class MusicAPIService {
         artist: "Sarrainodu",
         album: "Sarrainodu",
         duration: 290,
-        audioUrl: "/songs/Athiloka Sundari - Sarrainodu.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Athiloka Sundari - Sarrainodu.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Athiloka+Sundari"
       },
       {
@@ -36,7 +36,7 @@ class MusicAPIService {
         artist: "Murari",
         album: "Murari", 
         duration: 270,
-        audioUrl: "/songs/Bhama Bhama - Murari.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Bhama Bhama - Murari.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Bhama+Bhama"
       },
       {
@@ -45,7 +45,7 @@ class MusicAPIService {
         artist: "DUDE",
         album: "DUDE",
         duration: 240,
-        audioUrl: "/songs/Boom Boom - DUDE.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Boom Boom - DUDE.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Boom+Boom"
       },
       {
@@ -54,7 +54,7 @@ class MusicAPIService {
         artist: "Chinnadana Nikosam",
         album: "Chinnadana Nikosam",
         duration: 260,
-        audioUrl: "/songs/Chinnadana Nikosam - Chinnadana Nikosam.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Chinnadana Nikosam - Chinnadana Nikosam.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Chinnadana+Nikosam"
       },
       {
@@ -63,7 +63,7 @@ class MusicAPIService {
         artist: "Single",
         album: "Single",
         duration: 275,
-        audioUrl: "/songs/Ee Dhooramey.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Ee Dhooramey.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Ee+Dhooramey"
       },
       {
@@ -72,7 +72,7 @@ class MusicAPIService {
         artist: "Sankrantiki Vastunnam",
         album: "Sankrantiki Vastunnam",
         duration: 285,
-        audioUrl: "/songs/Godari Gattu - Sankrantiki Vastunnam.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Godari Gattu - Sankrantiki Vastunnam.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Godari+Gattu"
       },
       {
@@ -81,7 +81,7 @@ class MusicAPIService {
         artist: "Single",
         album: "Single",
         duration: 195,
-        audioUrl: "/songs/GoldenSparrow.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/GoldenSparrow.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Golden+Sparrow"
       },
       {
@@ -90,7 +90,7 @@ class MusicAPIService {
         artist: "Dookudu",
         album: "Dookudu",
         duration: 265,
-        audioUrl: "/songs/Guruvaram - Dookudu.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Guruvaram - Dookudu.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Guruvaram"
       },
       {
@@ -99,7 +99,7 @@ class MusicAPIService {
         artist: "Beast",
         album: "Beast",
         duration: 280,
-        audioUrl: "/songs/Halamathi - Beast.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Halamathi - Beast.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Halamathi"
       },
       {
@@ -108,7 +108,7 @@ class MusicAPIService {
         artist: "Single",
         album: "Single",
         duration: 220,
-        audioUrl: "/songs/Hello Ani.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Hello Ani.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Hello+Ani"
       },
       {
@@ -117,7 +117,7 @@ class MusicAPIService {
         artist: "Amaran",
         album: "Amaran",
         duration: 255,
-        audioUrl: "/songs/Hey Rangule - Amaran.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Hey Rangule - Amaran.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Hey+Rangule"
       },
       {
@@ -126,7 +126,7 @@ class MusicAPIService {
         artist: "Happy",
         album: "Happy",
         duration: 230,
-        audioUrl: "/songs/I hate You - Happy.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/I hate You - Happy.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=I+Hate+You"
       },
       {
@@ -135,7 +135,7 @@ class MusicAPIService {
         artist: "Acharya",
         album: "Acharya",
         duration: 270,
-        audioUrl: "/songs/LaheLahe - Acharya.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/LaheLahe - Acharya.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Lahe+Lahe"
       },
       {
@@ -144,7 +144,7 @@ class MusicAPIService {
         artist: "Telsu Kadha",
         album: "Telsu Kadha",
         duration: 245,
-        audioUrl: "/songs/Mallika Ganda - Telsu Kadha.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Mallika Ganda - Telsu Kadha.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Mallika+Ganda"
       },
       {
@@ -153,7 +153,7 @@ class MusicAPIService {
         artist: "Julayi",
         album: "Julayi",
         duration: 275,
-        audioUrl: "/songs/Mi iniki mundho Gate - Julayi.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Mi iniki mundho Gate - Julayi.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Mi+Iniki+Mundho"
       },
       {
@@ -162,7 +162,7 @@ class MusicAPIService {
         artist: "BBM",
         album: "BBM",
         duration: 265,
-        audioUrl: "/songs/Mottamodatisari - BBM.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Mottamodatisari - BBM.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Mottamodatisari"
       },
       {
@@ -171,7 +171,7 @@ class MusicAPIService {
         artist: "Single",
         album: "Single",
         duration: 285,
-        audioUrl: "/songs/Nuvvunte chaley .mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Nuvvunte chaley .mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Nuvvunte+Chaley"
       },
       {
@@ -180,7 +180,7 @@ class MusicAPIService {
         artist: "Janatha Garage",
         album: "Janatha Garage",
         duration: 250,
-        audioUrl: "/songs/Pakka Local - Janatha Garage.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Pakka Local - Janatha Garage.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Pakka+Local"
       },
       {
@@ -189,7 +189,7 @@ class MusicAPIService {
         artist: "Pushpa 2",
         album: "Pushpa 2",
         duration: 290,
-        audioUrl: "/songs/Peelings - Pushpa 2.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Peelings - Pushpa 2.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Peelings"
       },
       {
@@ -198,7 +198,7 @@ class MusicAPIService {
         artist: "Khaidhi No150",
         album: "Khaidhi No150",
         duration: 275,
-        audioUrl: "/songs/Sundari - Khaidhi No150.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Sundari - Khaidhi No150.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Sundari"
       },
       {
@@ -207,7 +207,7 @@ class MusicAPIService {
         artist: "Pataas",
         album: "Pataas",
         duration: 240,
-        audioUrl: "/songs/Tappa Tappa - Pataas.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Tappa Tappa - Pataas.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Tappa+Tappa"
       },
       {
@@ -216,7 +216,7 @@ class MusicAPIService {
         artist: "Temper",
         album: "Temper",
         duration: 255,
-        audioUrl: "/songs/Temper Title song.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Temper Title song.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Temper+Title"
       },
       {
@@ -225,7 +225,7 @@ class MusicAPIService {
         artist: "Iddaramailatho",
         album: "Iddaramailatho",
         duration: 280,
-        audioUrl: "/songs/Violen song - Iddaramailatho.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Violen song - Iddaramailatho.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Violen+Song"
       },
       {
@@ -234,7 +234,7 @@ class MusicAPIService {
         artist: "Mirchi",
         album: "Mirchi",
         duration: 260,
-        audioUrl: "/songs/Yahoo Yahoo - Mirchi.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Yahoo Yahoo - Mirchi.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Yahoo+Yahoo"
       },
       {
@@ -243,7 +243,7 @@ class MusicAPIService {
         artist: "Yamadonga",
         album: "Yamadonga",
         duration: 270,
-        audioUrl: "/songs/Youngu Yama - Yamadonga.mp3",
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Youngu Yama - Yamadonga.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Youngu+Yama"
       }
     ];
