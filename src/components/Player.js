@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Pause, SkipForward, SkipBack, Volume2, Shuffle, Repeat, Heart, Disc3 } from 'lucide-react';
+import { Play, Pause, SkipForward, SkipBack, Volume, Shuffle, Repeat, Heart, Disc3 } from 'lucide-react';
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
 import { useMusic } from '../context/MusicContext';
 import './Player.css';
@@ -136,8 +136,9 @@ const Player = () => {
         </div>
       </div>
 
+      {/* Volume Control - Right Side */}
       <div className="player__volume">
-        <Volume2 size={20} />
+        <Volume size={18} />
         <div className="player__volume-bar">
           <div 
             className="player__volume-fill"
