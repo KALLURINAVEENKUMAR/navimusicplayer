@@ -32,7 +32,8 @@ const musicReducer = (state, action) => {
       return {
         ...state,
         currentSong: action.payload,
-        isPlaying: true
+        isPlaying: true,
+        currentTime: 0
       };
     
     case 'PLAY_PAUSE':
@@ -50,7 +51,9 @@ const musicReducer = (state, action) => {
     case 'SET_CURRENT_INDEX':
       return {
         ...state,
-        currentIndex: action.payload
+        currentIndex: action.payload,
+        isPlaying: true,
+        currentTime: 0
       };
     
     case 'SET_VOLUME':
@@ -110,6 +113,15 @@ const musicReducer = (state, action) => {
           ...state,
           currentIndex: prevIndex,
           currentSong: state.queue[prevIndex],
+          isPlaying: true,
+          currentTime: 0
+        };
+      } else if (state.repeatMode === 'all' && state.queue.length > 0) {
+        // Loop to last song
+        return {
+          ...state,
+          currentIndex: state.queue.length - 1,
+          currentSong: state.queue[state.queue.length - 1],
           isPlaying: true,
           currentTime: 0
         };

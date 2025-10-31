@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Pause, SkipForward, SkipBack, Volume, Shuffle, Repeat, Heart, Disc3 } from 'lucide-react';
+import { Play, Pause, SkipForward, SkipBack, Shuffle, Repeat, Heart, Disc3 } from 'lucide-react';
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
 import { useMusic } from '../context/MusicContext';
 import './Player.css';
@@ -8,17 +8,17 @@ const Player = () => {
   const {
     currentSong,
     isPlaying,
-    volume,
     currentTime,
     duration,
     repeatMode,
     isShuffled,
+    queue,
+    currentIndex,
     dispatch
   } = useMusic();
 
   const {
     togglePlayPause,
-    setVolume,
     seek,
     handleNext,
     handlePrevious,
@@ -40,6 +40,21 @@ const Player = () => {
   };
 
   const progressPercentage = duration > 0 ? (currentTime / duration) * 100 : 0;
+
+  // Debug information
+  console.log('Player state:', { 
+    currentSong: currentSong?.title, 
+    isPlaying, 
+    repeatMode, 
+    isShuffled, 
+    queueLength: queue?.length,
+    currentIndex 
+  });
+
+  const testAutoAdvance = () => {
+    console.log('🧪 Testing auto-advance manually');
+    handleNext();
+  };
 
   if (!currentSong) {
     return (
@@ -106,6 +121,16 @@ const Player = () => {
             <SkipForward size={24} />
           </button>
           
+          {/* Temporary test button */}
+          <button 
+            className="player__control-btn"
+            onClick={testAutoAdvance}
+            title="Test Auto-advance"
+            style={{ background: '#ff0000', opacity: 0.7 }}
+          >
+            TEST
+          </button>
+          
           <button 
             className={`player__control-btn ${repeatMode !== 'none' ? 'active' : ''}`}
             onClick={toggleRepeat}
@@ -133,26 +158,6 @@ const Player = () => {
             />
           </div>
           <span className="player__time">{formatTime(duration)}</span>
-        </div>
-      </div>
-
-      {/* Volume Control - Right Side */}
-      <div className="player__volume">
-        <Volume size={18} />
-        <div className="player__volume-bar">
-          <div 
-            className="player__volume-fill"
-            style={{ width: `${volume * 100}%` }}
-          />
-          <input
-            type="range"
-            min="0"
-            max="1"
-            step="0.01"
-            value={volume}
-            onChange={(e) => setVolume(parseFloat(e.target.value))}
-            className="player__volume-input"
-          />
         </div>
       </div>
     </div>

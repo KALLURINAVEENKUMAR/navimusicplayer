@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, Music, Headphones, Search as SearchIcon, Music2, Disc3 } from 'lucide-react';
-import { MusicProvider } from './context/MusicContext';
+import { MusicProvider, useMusic } from './context/MusicContext';
 import Sidebar from './components/Sidebar';
 import Player from './components/Player';
 import Search from './components/Search';
@@ -14,6 +14,7 @@ const AppContent = () => {
   const [activeView, setActiveView] = useState('home');
   const [allSongs, setAllSongs] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const { dispatch } = useMusic();
 
   // Load all songs
   useEffect(() => {
@@ -23,13 +24,19 @@ const AppContent = () => {
         const songs = await musicAPIService.getAllSongs();
         console.log('Loaded songs:', songs);
         setAllSongs(songs);
+        
+        // Initialize the queue with all songs when they're loaded
+        if (songs && songs.length > 0) {
+          console.log('Setting initial queue with', songs.length, 'songs');
+          dispatch({ type: 'SET_QUEUE', payload: songs });
+        }
       } catch (error) {
         console.error('Error loading songs:', error);
       }
     };
 
     loadSongs();
-  }, []);
+  }, [dispatch]);
 
   // Filter songs based on search query
   const filteredSongs = allSongs.filter(song =>
@@ -70,7 +77,7 @@ const AppContent = () => {
                   <SearchIcon size={20} className="search-icon" />
                   <input
                     type="text"
-                    placeholder="Search songs, artists, or albums..."
+                    placeholder="Search songs or MovieName"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="search-input"

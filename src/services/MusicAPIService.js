@@ -245,6 +245,24 @@ class MusicAPIService {
         duration: 270,
         audioUrl: `${process.env.PUBLIC_URL}/songs/Youngu Yama - Yamadonga.mp3`,
         coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Youngu+Yama"
+      },
+      {
+        id: 28,
+        title: "Kadalalle",
+        artist: "Dear Comrade",
+        album: "Dear Comrade",
+        duration: 280,
+        audioUrl: `${process.env.PUBLIC_URL}/songs/Kadalalle - Dear Comrade.mp3`,
+        coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=Kadalalle"
+      },
+      {
+        id: 29,
+        title: "O Manmadhuda",
+        artist: "KING",
+        album: "KING",
+        duration: 290,
+        audioUrl: `${process.env.PUBLIC_URL}/songs/O Manmadhuda - KING.mp3`,
+        coverImage: "https://via.placeholder.com/300x300/ff0000/ffffff?text=O+Manmadhuda"
       }
     ];
   }
