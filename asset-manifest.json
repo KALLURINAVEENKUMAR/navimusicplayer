@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/navimusicplayer/static/css/main.b4609c8c.css",
+    "main.js": "/navimusicplayer/static/js/main.a3cf6675.js",
+    "static/js/453.e065462f.chunk.js": "/navimusicplayer/static/js/453.e065462f.chunk.js",
+    "index.html": "/navimusicplayer/index.html",
+    "main.b4609c8c.css.map": "/navimusicplayer/static/css/main.b4609c8c.css.map",
+    "main.a3cf6675.js.map": "/navimusicplayer/static/js/main.a3cf6675.js.map",
+    "453.e065462f.chunk.js.map": "/navimusicplayer/static/js/453.e065462f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4609c8c.css",
+    "static/js/main.a3cf6675.js"
+  ]
+}
